@@ -43,7 +43,7 @@ def add_text(watermark_text):
     text_font = ImageFont.truetype("arial.ttf", 25)
     text_to_add = watermark_text.get()
     edit_img = ImageDraw.Draw(image_to_edit)
-    edit_img.text((100, 175), text_to_add, "red", text_font)
+    edit_img.text((100, 175), text_to_add, "white", text_font)
     image_to_edit.save("C:/Users/Public/Pictures/wm.png")
 
     window.after(2000, show_pic())
